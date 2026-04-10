@@ -1,9 +1,9 @@
+html{
+    font-size: 20px;
+}
 body{
     font-family: "Arial","Meiryo",sans-serif;
     text-align: center;
-}
-.decoration{
-    font: size 20px;
 }
 .blue{
     color: skyblue;
