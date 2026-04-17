@@ -1,0 +1,71 @@
+#top{
+    /* 中にあるp要素（inline-block）を中央揃えにする */
+    text-align: center;
+    width: 800px;
+    /* 上下に20px、左右を中央揃え(auto)にする */
+    margin: 20px auto;
+    background-color: #dcc9f4;
+}
+p{
+    /* 横並びにする設定 */
+    display: inline-block;
+    /* 親要素の20%の幅にする */
+    width: 20%;
+    background-color: #ffd9df;
+}
+#middle{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    /* 上下20px、左右autoで中央配置 */
+    margin: 20px auto;
+    background-color: #ffd9df;
+}
+/* --- 子要素 01, 02, 03 への共通設定 --- */
+/* IDをカンマで区切ることで、共通項目の一括指定 */
+#middle-child01,
+#middle-child02,
+#middle-child03{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb;
+}
+#middle-child01{
+     top: 100px;
+    left: 100px;
+}
+#middle-child02{
+     top: 300px;
+    left: 300px;
+}
+#middle-child03{
+     top: 500px;
+    left: 500px;
+}
+#bottom{
+    width: 800px;
+    height: 300px;
+    /* 画面の中央に配置 */
+    margin: 0 auto;
+    background-color: #87ceeb;
+}
+/* --- 子要素 01, 02, 03 への共通設定 --- */
+/* IDをカンマで区切ることで、共通項目の一括指定 */
+#bottom-child01,
+#bottom-child02,
+#bottom-child03{
+    width: 400px;
+    height: 100px;
+    background-color: #e5dcf0;
+}
+/* 02を本来の場所から左に200pxずらす (relative=本来の表示位置を基準)*/
+#bottom-child02{
+    position: relative;
+    left: 200px;
+}
+/* 03を本来の場所から左に400pxずらす (relative=本来の表示位置を基準)*/
+#bottom-child03{
+    position: relative;
+    left: 400px;
+}
